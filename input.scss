@@ -1,0 +1,61 @@
+body, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Montserrat;
+}
+.container {
+    border: 1px solid blue;
+    max-width: 1420px;
+    margin: 0 auto;
+}
+header {
+    nav {
+        border: 1px solid red;
+        display: inline-block;
+        width: 100%;
+        margin-top: 32px;
+        margin-bottom: 116px;
+    }
+
+    ul {
+        // border: 1px solid rgb(0, 213, 255);
+        display: inline-block;
+        list-style: none;
+        vertical-align: 10px;
+        margin-left: 210px;
+        margin-right: 210px;
+        
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 14px;
+
+        
+        a {
+            // border: 1px solid rgb(0, 55, 255);
+            color: #334155;
+            font-weight: 600;
+        }
+        
+    }
+
+    li:last-child {
+            margin-right: 0;
+        }
+    
+
+    .signin-btn {
+        font-size: 12px;
+        // border: 1px solid rgb(242, 255, 0);
+        color: #FFFFFF;
+        background-color: #8081BD;
+        padding: 11px 12px 14px 12px;
+        border-radius: 50px;
+        font-weight: 700;
+        vertical-align: 10px;
+    }
+}
