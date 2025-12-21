@@ -1,3 +1,12 @@
+:root {
+    --bolor-dark: #334155;
+    --main-font-weight: 700;
+}
+
+.icon-orange {background-color: #F6B31F;}
+.color-violet {background-color: #8081BD;}
+.icon-pink {background-color: #F3ACC8;}
+    
 body, * {
     margin: 0;
     padding: 0;
@@ -10,6 +19,7 @@ body, * {
     max-width: 1420px;
     margin: 0 auto;
 }
+
 header {
     nav {
         border: 1px solid red;
@@ -24,8 +34,8 @@ header {
         display: inline-block;
         list-style: none;
         vertical-align: 10px;
-        margin-left: 210px;
-        margin-right: 210px;
+        margin-left: 233px;
+        margin-right: 235px;
         
     }
 
@@ -34,19 +44,15 @@ header {
         margin-right: 15px;
         font-size: 14px;
 
-        
         a {
             // border: 1px solid rgb(0, 55, 255);
-            color: #334155;
+            color: var(--bolor-dark); 
             font-weight: 600;
         }
         
     }
 
-    li:last-child {
-            margin-right: 0;
-        }
-    
+    li:last-child {margin-right: 0;}
 
     .signin-btn {
         font-size: 12px;
@@ -55,7 +61,55 @@ header {
         background-color: #8081BD;
         padding: 11px 12px 14px 12px;
         border-radius: 50px;
-        font-weight: 700;
+        font-weight: var(--main-font-weight);
         vertical-align: 10px;
     }
+
+
+
+    .header_info {
+        border: 1px solid red;
+        
+        .outer_box {
+            width: 100%;
+            // border: 1px solid red;
+            margin-right: 20px;
+            display: inline-block;
+            width: 450px;
+
+            p {
+                display: inline-block;
+                // border: 1px solid red;
+                width: 364px;
+                vertical-align: middle;
+                color: var(--bolor-dark);
+                
+                span {font-weight: var(--main-font-weight);}
+            }
+
+            .box {margin-bottom: 25px;}
+            .box:last-child {margin-bottom: 0;}
+        }
+
+        .outer_box:last-child {
+            margin-right: 0;
+        }
+
+        .icon-box {
+            width: 76px;
+            height: 76px;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 76px;
+            display: inline-block;
+            img {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+
+
+
+
 }
