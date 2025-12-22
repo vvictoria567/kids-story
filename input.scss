@@ -127,7 +127,7 @@ header {
 }
 
 .hero {
-    height: 385px;
+    height: 391px;
     border-radius: 20px;
 
     
@@ -190,16 +190,27 @@ header {
     
     }
     .questions {
-    border: 1px solid green;
-    position: absolute;
-    height: 930px;
-    width: 100%;
-    top: 342px;
+        border: 1px solid green;
+        position: absolute;
+        height: 930px;
+        width: 100%;
+        top: 342px;
 
-    background-image: url(img/kid\ \(1\).png), url(img/kid\ \(2\).png);
-    background-size: 290px 448px, 670.5px 694px, cover;
-    background-position: 60%;
-    background-repeat: no-repeat;
-    transform: scaleX(-1, 0);
+        img {
+            position: absolute;
+        }
+        .back_image {
+            right: -130px;
+            top: 30px;
+        };
+        .front_image {
+            max-width: 290px;
+            top: 200px;
+            right: 130px;
+            transform: scaleX(-1);
+        }
     }
+
+
+    
 }

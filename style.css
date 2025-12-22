@@ -116,7 +116,7 @@ header .header_info .icon-box img {
 }
 
 .hero {
-  height: 385px;
+  height: 391px;
   border-radius: 20px;
 }
 .hero .container h2 {
@@ -176,11 +176,19 @@ header .header_info .icon-box img {
   height: 930px;
   width: 100%;
   top: 342px;
-  background-image: url(img/kid\ \(1\).png), url(img/kid\ \(2\).png);
-  background-size: 290px 448px, 670.5px 694px, cover;
-  background-position: 60%;
-  background-repeat: no-repeat;
-  transform: scaleX(-1, 0);
+}
+.hero .questions img {
+  position: absolute;
+}
+.hero .questions .back_image {
+  right: -130px;
+  top: 30px;
+}
+.hero .questions .front_image {
+  max-width: 290px;
+  top: 200px;
+  right: 130px;
+  transform: scaleX(-1);
 }
 
 /*# sourceMappingURL=style.css.map */
