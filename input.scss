@@ -1,12 +1,27 @@
 :root {
-    --bolor-dark: #334155;
+    --color-dark: #334155;
+    --color-white: #FFFFFF;
+
     --main-font-weight: 700;
+    --second-font-weight: 600;
+
+    --main-margin: 116px;
+
+    --sending-width: 308px;
+    --sending-height: 40px;
+    --sending-radius: 50px;
+    
+                
 }
 
 .icon-orange {background-color: #F6B31F;}
 .color-violet {background-color: #8081BD;}
 .icon-pink {background-color: #F3ACC8;}
     
+body {
+    position: relative;
+}
+
 body, * {
     margin: 0;
     padding: 0;
@@ -26,7 +41,7 @@ header {
         display: inline-block;
         width: 100%;
         margin-top: 32px;
-        margin-bottom: 116px;
+        margin-bottom: var(--main-margin);
     }
 
     ul {
@@ -34,8 +49,8 @@ header {
         display: inline-block;
         list-style: none;
         vertical-align: 10px;
-        margin-left: 233px;
-        margin-right: 235px;
+        margin-left: 230px;
+        margin-right: 230px;
         
     }
 
@@ -46,8 +61,8 @@ header {
 
         a {
             // border: 1px solid rgb(0, 55, 255);
-            color: var(--bolor-dark); 
-            font-weight: 600;
+            color: var(--color-dark); 
+            font-weight: var(--second-font-weight);
         }
         
     }
@@ -57,7 +72,7 @@ header {
     .signin-btn {
         font-size: 12px;
         // border: 1px solid rgb(242, 255, 0);
-        color: #FFFFFF;
+        color: var(--color-white);
         background-color: #8081BD;
         padding: 11px 12px 14px 12px;
         border-radius: 50px;
@@ -69,6 +84,7 @@ header {
 
     .header_info {
         border: 1px solid red;
+        margin-bottom: var(--main-margin);
         
         .outer_box {
             width: 100%;
@@ -82,7 +98,7 @@ header {
                 // border: 1px solid red;
                 width: 364px;
                 vertical-align: middle;
-                color: var(--bolor-dark);
+                color: var(--color-dark);
                 
                 span {font-weight: var(--main-font-weight);}
             }
@@ -108,8 +124,82 @@ header {
             }
         }
     }
+}
 
+.hero {
+    height: 385px;
+    border-radius: 20px;
 
+    
+    
+    .container {
+        h2 {
+            color: var(--color-white);
+            font-weight: var(--main-font-weight);
+            font-size: 40px;
+            margin-top: 48px;
+            margin-bottom: 27px;
+        }
+        .main-text {
+            color: var(--color-white);
+            font-weight: 500;
+            font-size: 20px;
+            margin-bottom: 31px;
+        }
+        
+        #phone {
+                width: var(--sending-width);
+                height: var(--sending-height);
+                border-radius: var(--sending-radius);
+                font-weight: var(--second-font-weight);
+                color: var(--color-dark);
+                background-color: var(--color-white);
+                border: none;
+                }
 
+        .radio-box {
+            margin-top: 20px;
+            margin-bottom: 49px;
+            #control1 {
+                color: var(--color-white);
+                width: 20px;
+                height: 20px;
+                border-radius: 50px;
+            }
+            .radio-text {
+            color: var(--color-white);
+            font-weight: var(--second-font-weight);
+            font-size: 10px;
+            margin-left: 13px;
+            display: inline-block;
+            }
+        }
+        
+        .send_btn {
+            display: inline-block;
+            width: var(--sending-width);
+            height: var(--sending-height);
+            border-radius: var(--sending-radius);
+            color: var(--color-dark);
+            font-weight: var(--main-font-weight);
+            text-align: center;
+            vertical-align: middle;
+            line-height: 40px;
+            text-transform: uppercase;
+        }
+    
+    }
+    .questions {
+    border: 1px solid green;
+    position: absolute;
+    height: 930px;
+    width: 100%;
+    top: 342px;
 
+    background-image: url(img/kid\ \(1\).png), url(img/kid\ \(2\).png);
+    background-size: 290px 448px, 670.5px 694px, cover;
+    background-position: 60%;
+    background-repeat: no-repeat;
+    transform: scaleX(-1, 0);
+    }
 }
