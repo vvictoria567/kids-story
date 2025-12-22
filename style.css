@@ -1,12 +1,16 @@
 :root {
   --color-dark: #334155;
   --color-white: #FFFFFF;
+  --color-violet: #8081BD;
+  --bcolor-services: #FFF6D1;
   --main-font-weight: 700;
   --second-font-weight: 600;
   --main-margin: 116px;
   --sending-width: 308px;
   --sending-height: 40px;
   --sending-radius: 50px;
+  --icon-border-radius: 10px;
+  --heading-size: 40px;
 }
 
 .icon-orange {
@@ -40,7 +44,6 @@ body, * {
 }
 
 header nav {
-  border: 1px solid red;
   display: inline-block;
   width: 100%;
   margin-top: 32px;
@@ -70,12 +73,11 @@ header .signin-btn {
   color: var(--color-white);
   background-color: #8081BD;
   padding: 11px 12px 14px 12px;
-  border-radius: 50px;
+  border-radius: var(--sending-radius);
   font-weight: var(--main-font-weight);
   vertical-align: 10px;
 }
 header .header_info {
-  border: 1px solid red;
   margin-bottom: var(--main-margin);
 }
 header .header_info .outer_box {
@@ -105,7 +107,7 @@ header .header_info .outer_box:last-child {
 header .header_info .icon-box {
   width: 76px;
   height: 76px;
-  border-radius: 10px;
+  border-radius: var(--icon-border-radius);
   text-align: center;
   line-height: 76px;
   display: inline-block;
@@ -116,13 +118,14 @@ header .header_info .icon-box img {
 }
 
 .hero {
+  margin-bottom: var(--main-margin);
   height: 391px;
   border-radius: 20px;
 }
 .hero .container h2 {
   color: var(--color-white);
   font-weight: var(--main-font-weight);
-  font-size: 40px;
+  font-size: var(--heading-size);
   margin-top: 48px;
   margin-bottom: 27px;
 }
@@ -149,7 +152,7 @@ header .header_info .icon-box img {
   color: var(--color-white);
   width: 20px;
   height: 20px;
-  border-radius: 50px;
+  border-radius: var(--sending-radius);
 }
 .hero .container .radio-box .radio-text {
   color: var(--color-white);
@@ -171,7 +174,6 @@ header .header_info .icon-box img {
   text-transform: uppercase;
 }
 .hero .questions {
-  border: 1px solid green;
   position: absolute;
   height: 930px;
   width: 100%;
@@ -189,6 +191,62 @@ header .header_info .icon-box img {
   top: 200px;
   right: 130px;
   transform: scaleX(-1);
+}
+
+.services {
+  margin-bottom: var(--main-margin);
+}
+.services .container h2 {
+  color: var(--color-violet);
+  font-weight: var(--main-font-weight);
+  font-size: var(--heading-size);
+  margin-bottom: 41px;
+}
+.services .container .box {
+  display: inline-block;
+  background-color: var(--bcolor-services);
+  border-radius: var(--icon-border-radius);
+  height: 100px;
+  margin-bottom: 29px;
+  margin-right: 18px;
+}
+.services .container .box .box1:last-child {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+.services .container .box .box1 {
+  display: inline-block;
+  background-color: var(--color-white);
+  border-radius: 5px;
+  width: 76px;
+  height: 76px;
+  text-align: center;
+  line-height: 76px;
+  display: inline-block;
+  margin: 12px 0 12px 12px;
+}
+.services .container .box .box1 img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.services .container .box span {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: var(--color-dark);
+  font-weight: var(--main-font-weight);
+}
+.services .container .yoga span, .services .container .plastics span, .services .container .golf span, .services .container .begovely span {
+  width: 160px;
+}
+.services .container .montessori span {
+  width: 470px;
+}
+.services .container .construction span, .services .container .rhetoric span, .services .container .climbing span {
+  width: 264px;
+}
+.services .container .english span, .services .container .etiquette span, .services .container .therapy span {
+  width: 356px;
 }
 
 /*# sourceMappingURL=style.css.map */
