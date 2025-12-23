@@ -25,6 +25,10 @@
   background-color: #F3ACC8;
 }
 
+.icon-blue {
+  background-color: #0E95D3;
+}
+
 body {
   position: relative;
 }
@@ -247,6 +251,29 @@ header .header_info .icon-box img {
 }
 .services .container .english span, .services .container .etiquette span, .services .container .therapy span {
   width: 356px;
+}
+
+.advantages {
+  border: 1px solid red;
+  margin-bottom: var(--main-margin);
+}
+.advantages .container .box {
+  border: 1px solid red;
+  width: 460px;
+  height: 76px;
+  display: inline-block;
+}
+.advantages .container .box .icon-box {
+  width: 76px;
+  height: 76px;
+  border-radius: var(--icon-border-radius);
+  text-align: center;
+  line-height: 76px;
+  display: inline-block;
+}
+.advantages .container .box .icon-box img {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=style.css.map */
