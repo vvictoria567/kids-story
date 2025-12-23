@@ -5,12 +5,14 @@
   --bcolor-services: #FFF6D1;
   --main-font-weight: 700;
   --second-font-weight: 600;
+  --text-font-weight: 500;
   --main-margin: 116px;
   --sending-width: 308px;
   --sending-height: 40px;
   --sending-radius: 50px;
   --icon-border-radius: 10px;
   --heading-size: 40px;
+  --text-font-size: 20px;
 }
 
 .icon-orange {
@@ -86,14 +88,16 @@ header .header_info {
 }
 header .header_info .outer_box {
   width: 100%;
-  margin-right: 20px;
+  margin-right: 16px;
   display: inline-block;
   width: 450px;
 }
 header .header_info .outer_box p {
+  border: 1px solid red;
   display: inline-block;
-  width: 364px;
+  width: 356px;
   vertical-align: middle;
+  margin-left: 10px;
   color: var(--color-dark);
 }
 header .header_info .outer_box p span {
@@ -101,6 +105,7 @@ header .header_info .outer_box p span {
 }
 header .header_info .outer_box .box {
   margin-bottom: 25px;
+  border: 1px solid red;
 }
 header .header_info .outer_box .box:last-child {
   margin-bottom: 0;
@@ -135,8 +140,8 @@ header .header_info .icon-box img {
 }
 .hero .container .main-text {
   color: var(--color-white);
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: var(--text-font-weight);
+  font-size: var(--text-font-size);
   margin-bottom: 31px;
 }
 .hero .container #phone {
@@ -257,11 +262,39 @@ header .header_info .icon-box img {
   border: 1px solid red;
   margin-bottom: var(--main-margin);
 }
+.advantages .container .description {
+  margin-bottom: 58px;
+}
+.advantages .container .description h2 {
+  color: var(--color-violet);
+  font-weight: var(--main-font-weight);
+  font-size: var(--heading-size);
+  margin-bottom: 24px;
+}
+.advantages .container .description p {
+  color: var(--color-dark);
+  font-weight: var(--text-font-weight);
+  font-size: var(--text-font-size);
+}
 .advantages .container .box {
   border: 1px solid red;
-  width: 460px;
+  width: 450px;
   height: 76px;
   display: inline-block;
+  margin-right: 16px;
+}
+.advantages .container .box span {
+  border: 1px solid red;
+  color: var(--color-dark);
+  font-weight: var(--main-font-weight);
+  font-size: var(--text-font-size);
+  display: inline-block;
+  width: 356px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.advantages .container .box .box:last-child {
+  margin-right: 0;
 }
 .advantages .container .box .icon-box {
   width: 76px;
